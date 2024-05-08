@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="card">
+            <div id="s1">
+                <h1>Weather Forecast</h1>
+                <div id="search">
+                    <form onsubmit="getData(event)" class="searchData">
+                        <input type="text" id="inputBox" placeholder="Enter City Name"> <br>
+                        <div id="btn">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="s2">
+                <div class="s22">
+                    <h4>Country Name</h4>
+                    <h4 id="count">__</h4>
+                </div>
+                <div class="s22">
+                    <h4>State Name</h4>
+                    <h4 id="state">__</h4>
+                </div>
+                <div class="s22">
+                    <h4>City Name</h4>
+                    <h4 id="city">__</h4>
+                </div>
+                <div class="s22">
+                    <h4>Humidity</h4>
+                    <h4 id="hum">__</h4>
+                </div>
+                <div class="s22">
+                    <h4>Wind Speed</h4>
+                    <h4 id="wind">__KMPH</h4>
+                </div>
+                <div class="s22">
+                    <h4>Temprature</h4>
+                    <h4 id="tem">__°C</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

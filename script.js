@@ -13,6 +13,8 @@ const city1 = document.getElementById("city");
 const humidity = document.getElementById("hum");
 const wind = document.getElementById("wind");
 const tem = document.getElementById("tem");
+const logo = document.querySelector("img");
+const text = document.getElementById("text");
 
 const getData = async (event) => {
     event.preventDefault();
@@ -33,11 +35,12 @@ const getData = async (event) => {
 
     //manipulation
 
-    count.innerHTML = data.location.country;
-    state.innerHTML = data.location.region
+    // count.innerHTML = data.location.country;
+    // state.innerHTML = data.location.region;
     city1.innerHTML = data.location.name;
-    humidity.innerHTML = data.current.humidity
-    tem.innerHTML = data.current.temp_c + degree
-    wind.innerHTML = data.current.wind_kph + kmph
-    //logoImage.src = data.current.condition.icon
+    humidity.innerHTML = data.current.humidity;
+    tem.innerHTML = data.current.temp_c + degree;
+    wind.innerHTML = data.current.wind_kph + kmph;
+    logo.src = data.current.condition.icon;
+    text.innerHTML = data.current.condition.text
 }
